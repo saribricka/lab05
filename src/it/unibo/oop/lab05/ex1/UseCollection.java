@@ -29,13 +29,13 @@ public final class UseCollection {
         System.out.println(coll); // [1, 3, 5, 7, 9, 11]
 
         coll.add(13);
-        coll.add(15);
+        coll.add(15);	//this second line is ignored
         coll.add(15);
         coll.remove(7);
         System.out.println(coll);
 
         coll.removeAll(Arrays.asList(11, 13, 15));
-        System.out.println(coll);
+        System.out.println(coll + "im here");
         coll.retainAll(Arrays.asList(1, 2, 3, 4, 5));
         System.out.println(coll);
         System.out.println(coll.contains(3));
